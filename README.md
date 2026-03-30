@@ -28,7 +28,7 @@ It focuses on improving my HTML and CSS skills, especially layout design using F
 - Organizing files and folders correctly for deployment
 
 ## Live Website
-()
+(https://belovedhlengiwe4-dot.github.io/salon-website/)
 
 ## Author
 Hlengiwe Beloved Mthinsi
