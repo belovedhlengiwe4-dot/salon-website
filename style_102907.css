@@ -1,0 +1,259 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    margin: 12px;
+}
+.mheading{
+    font-family: sans-serif, Arial, Helvetica; 
+    text-align: center;
+    font-size: 80px;
+    margin: 25px;
+    width: 100%;
+    color: #8B4513;
+}
+.navbar{
+    background-color: #8B4513;
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+.navbar a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.navbar a:hover{
+    background-color: white;
+    color: black;
+}
+main{
+    margin: 25px;
+}
+.description{
+    background-color: white;
+    padding: 16px;
+    border-radius: 16px;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 35px;
+}
+#button{
+    margin-top: 16px;
+    display: inline-block;
+    background-color: #8B4513;
+    padding: 8px;
+    border-radius: 12px;
+}
+#button a{
+    text-decoration: none;
+    color: white;
+}
+#button:hover{
+    background-color: beige;
+}
+#button a:hover{
+    cursor: pointer;
+    color: black;
+}
+.headings{
+    font-family: sans-serif, Arial, Helvetica;
+    color: #8B4513;
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+#about{
+    display: flex;
+    gap: 25px;
+    margin-top: 100px;
+}
+.about1{
+    margin: 25px;
+}
+#abt{
+    background-color: beige;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+}
+img{
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+}
+.cd{
+    display: flex;
+    gap: 35px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 100%;
+}
+.cards{
+    background-color: beige;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+}
+.cards:hover{
+    transform: scale(1.1);
+    transition: all 0.2s linear;
+    box-shadow: 10px 10px 10px 1px grey;
+}
+.buttons{
+    display: inline-block;
+    background-color: #8B4513;
+    padding: 8px;
+    margin-top: 18px;
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+}
+.buttons:hover{
+    color: white;
+    background-color: grey;
+    cursor: pointer;
+}
+#footer{
+    background-color: lightgrey;
+    text-align: center;
+    padding: 18px;
+    margin-top: 12px;
+    color: grey;
+}
+.pricing li{
+    list-style-type: none;
+}
+#services{
+    display: flex;
+    gap: 35px;
+    width: 100%;
+    height: 100%;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+section{
+    margin: 25px;
+}
+.pricing{
+    background-image: url("9ce10d3128893b2952b51b8770235c08.jpg");
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+#line{
+    background-color: beige;
+    color: black;
+    padding: 20px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+#contact{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+#info{
+    background-color: beige;
+    padding: 50px;
+    width: 40%;
+    margin-left: 25px;
+}
+#map{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+    padding: 50px;
+    width: 60%;
+    margin-right: 25px;
+}
+#form{
+    margin: 25px;
+}
+#form h2{
+    font-family: sans-serif, Arial, Helvetica; 
+    font-size: 60px;
+    margin-bottom: 25px;
+    width: 100%;
+    color: #8B4513;
+}
+input[type=text]{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+}
+input[type=text]:focus{
+    border: 3px solid #555;
+}
+input[type=email]{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+}
+input[type=email]:focus{
+    border: 3px solid #555;
+}
+
+textarea{
+    width: 100%;
+    margin: 10px 0;
+    height: 150px;
+    padding: 10px;
+    resize: none;
+}
+#button-container{
+    display: flex;
+    justify-content: center;
+}
+input[type=submit]{
+    padding: 12px;
+    border-radius: 8px;
+}
+input[type=submit]:hover{
+    cursor: pointer;
+    background-color: #555;
+}
+@media screen and (max-width: 1080px){
+    #about, .cd, #services, #contact{
+        flex-direction: column;
+    }
+    .cards, .pricing{
+        width: 100%;
+    }
+    .navbar ul{
+        justify-content: center;
+        gap: 10px;
+    }
+    #info, #map{
+        width: 100%;
+        margin: 0;
+    }
+    .mheading{
+        font-size: 40px;
+    }
+    .cd, #services, #about, #contact{
+        gap: 20px;
+    }
+    body{
+        text-align: center;
+    }
+}
