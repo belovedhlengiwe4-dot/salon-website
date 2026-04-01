@@ -93,7 +93,7 @@ main{
 img{
     border-radius: 12px;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 .cd{
     display: flex;
@@ -150,7 +150,7 @@ section{
     margin: 25px;
 }
 .pricing{
-    background-image: url("images/9ce10d3128893b2952b51b8770235c08.jpg");
+    background-image: url("9ce10d3128893b2952b51b8770235c08.jpg");
     padding: 25px;
     border-radius: 12px;
     text-align: center;
@@ -232,13 +232,16 @@ input[type=submit]:hover{
     cursor: pointer;
     background-color: #555;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1080px){
     #about, .cd, #services, #contact{
         flex-direction: column;
     }
+    .cards, .pricing{
+        width: 100%;
+    }
     .navbar ul{
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        gap: 10px;
     }
     #info, #map{
         width: 100%;
@@ -246,7 +249,11 @@ input[type=submit]:hover{
     }
     .mheading{
         font-size: 40px;
-        margin-left: 8px;
-        margin-right: 8px;
+    }
+    .cd, #services, #about, #contact{
+        gap: 20px;
+    }
+    body{
+        text-align: center;
     }
 }
